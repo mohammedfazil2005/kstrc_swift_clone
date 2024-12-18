@@ -494,9 +494,7 @@ footer{
 
 
 @media screen and (max-width:479px){
-    .box img{
-        width: 100%;
-    }
+    
     .footer-child{
         display: flex;
         flex-direction: column;
