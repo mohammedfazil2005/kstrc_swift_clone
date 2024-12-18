@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSRTC-Swift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon"
+        href="https://play-lh.googleusercontent.com/IFp0f9V3DwSd3aHkjuDMplHCEGEwwSSjy0rLc9vBMFPrPvZJIUHesKnc_VHcaTiUCAJA"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- <div class="top-div-ksrtc-logo">
+        <img src="https://play-lh.googleusercontent.com/Hm7mdo5V8AFPY8Vlt86CzlGDbCApcR2kAIek7lYnmRA_x7IXeyhQ6tACqjyXqNe28D8=w600-h300-pc0xffffff-pd"
+            alt="" width="50px">
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg sticky-top p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://ksrtcswift.kerala.gov.in/sites/default/files/inline-images/ksrtclogo1.png" alt=""
+                    width="50px"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" href="#">Cancellation</a>
+                    </li>
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    <li class="nav-item nav-li dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Manage Booking
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a class="dropdown-item" href="#">View booking</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" href="#">Login/Signup</a>
+                    </li>
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" href="#">Counter login</a>
+                    </li>
+                    <li class="nav-item nav-li">
+                        <a class="nav-link" href="#">Status Check</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex customer-service" role="search">
+                    <ul class="navbar-nav">
+                        <li class="nav-link"><i class="fa-solid fa-headphones"></i>Customer Service
+                        </li>
+                    </ul>
+                    <div class="popup-div">
+                        <div class="popup-div-child-parent" style="  border-bottom: 1px solid white;">
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Call support</h5>
+                                <p>Tel : 011 - 43131313, 43030303</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="popup-div-child-parent">
+                            <div>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Mail support</h5>
+                                <p>Ksrtc@ksstrc.com</p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container heading-container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-md-6 heading-box">
+                <img data-aos="fade-right"
+                data-aos-offset="500"
+                data-aos-easing="ease-in-sine" src="https://i.imghippo.com/files/ds7266od.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="heading-form" data-aos="fade-left" data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500" >
+                    <div>
+                        <h1>Book a Trip!</h1>
+                        <img src="https://play-lh.googleusercontent.com/Hm7mdo5V8AFPY8Vlt86CzlGDbCApcR2kAIek7lYnmRA_x7IXeyhQ6tACqjyXqNe28D8=w600-h300-pc0xffffff-pd"
+                            alt="">
+                    </div>
+                    <form action="">
+                        <label for="">To</label>
+                        <input type="text" placeholder="Enter Source">
+                        <label for="">From</label>
+                        <input type="text" placeholder="Enter Destination">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <!-- <div class="ads-heading">
+                    <img src="https://images.ixigo.com/image/upload/why-ixigo/6f088102ee84ca42818880b0e7a53013-qeinq.png"
+                        alt="">
+
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+    <div class="middle-ads">
+        <div class="middle-ads-child">
+                <div class=" deals-ad">
+                    <i class="fa-solid fa-handshake"></i>
+                    <p>The Best Deals <br><span> Save up to 70%</span></p>
+                </div>
+                <div class=" deals-ad">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>
+                        The Most Choices
+                        <br><span> Millions of routes worldwide</span>
+                    </p>
+                </div>
+                <div class=" deals-ad">
+                    <i class="fa-solid fa-bus"></i>
+                    <p>
+                        Easy and Transparent
+                        <br><span> Compare offers with 1 click</span>
+                    </p>
+                </div>
+                <div class=" deals-ad">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Exclusive Benefits <br><span> Get access to special offers</span></p>
+                </div>
+            </div>
+    </div>
+    <h1 class="text-center mt-4" id="explore">Explore!</h1>
+    <hr style="color: white;">
+    <div class="explore-div">
+     
+        <div class="explore-div-left">
+            <div class="box" data-aos="zoom-out-up">
+                <img  src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg" alt="">
+                <div class="content" id="box-1">
+                    <h1>Alappuzha</h1>
+                    <button>View</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-out-up">
+                <img src="https://static.toiimg.com/thumb/msid-85515152,width-748,height-499,resizemode=4,imgsize-344180/.jpg" alt="">
+                <div class="content" id="box-2">
+                    <h1>Munnar</h1>
+                    <button>View</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-out-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Idukki013.jpg" alt="">
+                <div class="content" id="box-3">
+                    <h1>Idukki</h1>
+                    <button>View</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="container" data-aos="fade-up-right">
+        <img src="https://www.a1travels.in/assets/images/routes.png" class="img-fluid" alt="">
+    </div>
+    <hr style="color: white;">
+    <h1 id="popular-route" class="text-center">Popuplar Routes</h1>
+    <div class="container mb-3 table-container" data-aos="fade-up-right">
+        <div class="row">
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Kochi Buses</h4>
+                <p> To: Trivandrum, Kozhikode, Bangalore, Mumbai</p>
+            </div>
+        </div>
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Thiruvananthapuram Buses</h4>
+                <p>To: Kochi, Kottayam, Bangalore, Chennai</p>
+            </div>
+        </div>
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Kozhikode Buses</h4>
+                <p>To: Kochi, Trivandrum, Bangalore, Mangalore</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Kottayam Buses </h4>
+                <p>To: Kochi, Thiruvananthapuram, Bangalore, Chennai</p>
+            </div>
+        </div>
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Mangalore Buses </h4>
+                <p>To: Kozhikode, Bangalore, Mumbai, Goa</p>
+            </div>
+        </div>
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Trissur Buses </h4>
+                <p>To: Kochi, Kozhikode, Bangalore, Chennai
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Alappuzha Buses</h4>
+                <p>To: Kochi, Trivandrum, Kottayam, Bangalore</p>
+            </div>
+        </div>
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Pathanamthitta Buses </h4>
+                <p>To: Kochi, Trivandrum, Kottayam, Chennai</p>
+            </div>
+        </div>
+        <div class="col-md-4 table-box">
+            <div>
+                <i><i class="fa-solid fa-bus"></i></i>
+            </div>
+            <div>
+                <h4>Palakkad Buses </h4>
+                <p>To: Kochi, Coimbatore, Bangalore, Chennai
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr style="color: white;">
+    <div class="container" data-aos="fade-up-right">
+        <h1 class="text-center" id="improve-exp">Use our tools to improve your experience</h1>
+        <div class="row updates-parent">
+            <div class="col-md-6 updates-box">
+                <div>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div>
+                    <h4>View live updates</h4>
+                    <p> Track the progress of your BlaBlaCar bus in real time.</p>
+                </div>
+            </div>
+            <div class="col-md-6 updates-box">
+                <div>
+                    <i class="fa-brands fa-square-font-awesome"></i>
+                </div>
+                <div>
+                    <h4>Manage your bookings</h4>
+                    <p> Easily cancel or modify your booking in just a few clicks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Download-div" data-aos="fade-up-right">
+        <div class="download-child">
+            <div class="download-left">
+                <h1>Enjoy a better travel experience with the Ksrtc app</h1>
+                <p>All your rides and tickets in one place, up-to-date info and exclusive mobile-only features.</p>
+                <div>
+                    <img src="https://www.logo.wine/a/logo/App_Store_(iOS)/App_Store_(iOS)-Badge-Logo.wine.svg" alt="">
+                    <img src="https://i.imghippo.com/files/MRZ1309sY.png" id="playstore" alt="">
+                </div>
+            </div>
+            <div class="download-right">
+                <img src="https://i.imghippo.com/files/WGYm8422hZw.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-child">
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div>
+            <h1>© 2024 KSRTC LTD</h1>
+            <p>Kerala</p>
+        </div>
+    </div>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+

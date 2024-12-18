@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: outfit;
+   
+}
+body{
+    background: white;
+}
+.top-div-ksrtc-logo{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+   
+    
+}
+nav{
+    background-color: transparent;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   
+}
+
+.nav-li a{
+    color: white;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.nav-li a:hover{
+    border-bottom: 1px solid orange;
+
+    color: white;
+}
+.customer-service{
+    transition: 1s;
+    position: relative;
+}
+
+.customer-service ul li{
+    color: white;
+    margin-right: 70px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+    
+}
+.customer-service ul li i{
+    margin: 0px 4px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+}
+
+.customer-service ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.popup-div{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -200px;
+  top: 70px;
+transition: 1s ease;
+
+
+}
+.popup-div-child-parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    border: 1px solid orange;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius:3px;
+}
+.popup-div-child-parent div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+}
+
+.popup-div-child-parent h5{
+    font-size: 16px;
+    margin-top: 6px;
+}
+.popup-div-child-parent p{
+    font-size: 10px;
+}
+
+.customer-service:hover .popup-div {
+  right: -1px;
+ 
+}
+
+
+.heading-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid orange;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px;
+}
+.heading-form div{
+    display: flex;
+    justify-content: space-between;
+}
+.heading-form div h1{
+    font-weight: bolder;
+    color: orange;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.heading-form div img{
+  
+    height: 30px;
+    border-radius: 50%;
+    width: 60px;
+}
+.heading-form form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    color: white
+    
+}
+.heading-form form input{
+    border: none;
+    border-bottom: 1px solid orange;
+    background-color: transparent;
+    outline:none;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 6px;
+    color: orange;
+}
+
+.heading-form button{
+    border: none;
+    outline:none;
+    background-color: white;
+    color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid orange;
+}
+.heading-form button:hover{
+    color: green;
+    background: whitesmoke;
+}
+
+.ads-heading{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.ads-heading img{
+    width: 300px;
+    border-radius: 10px;
+    height: 70px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px orange;
+    transition: 1s;
+    cursor: pointer;
+}
+.ads-heading img:hover{
+    transform: translateX(10px);
+}
+.middle-ads{
+    background-color: white;
+ 
+   
+    margin-bottom: 7px;
+    margin-top: 50px;
+    box-shadow:0px 0px 6px;
+ 
+    
+}
+.middle-ads-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 60px;
+}
+.deals-ad{
+    display: flex;
+    gap: 10px;
+    color: orange;
+    margin-top: 20px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+.deals-ad i{
+    color: orange;
+    font-size: 28px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+}
+.deals-ad p{
+    font-weight: bold;
+}
+.deals-ad p span{
+    font-weight: lighter
+}
+.explore-div{
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    margin-bottom: 50px;
+   
+}
+#explore,#popular-route,#improve-exp{
+    font-weight: bolder;
+    color: orange;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.explore-div-left{
+    display: flex;
+    gap: 30px;
+   flex-wrap: wrap;
+    justify-content: center;
+    transition: 1s;
+}
+.box{
+    width: 350px;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.box img{
+    width: 100%;
+    border-radius: 6px;
+    height: 236px;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 350px;
+    height: 241px;
+    color: yellow;
+    border-radius: 6px;
+    top: 0px;
+   
+    transition: top 1s, background-color 1s; /* Ensure transition for both properties */
+  
+   
+}
+
+.box:hover .content{
+    transition: 1s;
+    top: -2760px; /* Initial position off-screen */
+
+}
+.content h1{
+    font-weight: bolder;
+    color: orange;
+}
+.content button{
+    border: none;
+    outline:none;
+    background-color: white;
+    color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.table-container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.table-box{
+    display: flex;
+    border: 1px solid orange;
+}
+.table-box div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.table-box div i{
+    font-size: 20px;
+    color: orange;
+}
+.table-box div p{
+    font-size: 15px;
+    color: orange;
+}
+.updates-parent{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 70px;
+   margin-top: 30px;
+ 
+    
+}
+
+.updates-box{
+    display: flex;
+    border: 1px solid orange;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 450px;
+    margin-top: 10px;
+}
+.updates-box div{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+.updates-box div i{
+    font-size: 45px;
+    color: orange;
+}
+.updates-box div p{
+    font-size: 15px;
+}
+.Download-div{
+    background-color: white;
+    margin-bottom: 7px;
+    margin-top: 50px;
+    box-shadow:0px 0px 6px;
+}
+.download-child{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 10px 30px;
+}
+.download-left{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.download-left h1{
+    font-weight: bolder;
+    color: orange;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    font-weight: 500;
+}
+.download-left p{
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    font-weight: 500;
+}
+.download-left div{
+    display: flex;
+    gap: 10px;
+    margin-top: -70px;
+    flex-wrap: wrap;
+}
+.download-left div img{
+    width: 250px;
+
+}
+.download-right img{
+    width: 100%;
+}
+footer{
+    margin-top: 50px;
+   background-color: black;
+   box-shadow: 0px 0px 10px;
+}
+.footer-child{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 70px;
+    flex-wrap: wrap;
+   
+}
+.footer-child div{
+    margin-top: 30px;
+}
+.footer-child div i{
+    font-size: 40px;
+    margin: 0px 20px;
+    color: orange;
+}
+.footer-child div h1{
+    font-weight: bolder;
+    color: orange;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    font-weight: 500;
+}
+.footer-child div p{
+    font-weight: bolder;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes example {
+    from {color: black;}
+    to {color: orange;}
+  }
+  
+
+
+
+  @media screen and (max-width:1161px){
+    footer{
+        margin-top: 700px;
+    }
+}
+
+
+@media screen and (max-width:1074px){
+    .explore-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        margin-top: 500px;
+    }
+}
+
+
+
+
+    @media screen and (max-width:768px){
+        .explore-div-left{
+            flex-direction: column;
+            align-items: center;
+        }
+       
+      
+    }
+    
+    @media screen and (max-width:578px){
+        .download-left div img{
+            width: 160px;
+            height: 150px;
+        
+        }
+        .download-left div{
+            margin-top: -20px;
+        }
+        .download-right img{
+          margin-top: -40px;
+        }
+      
+    }
+    @media screen and (max-width:390px){
+        .download-left div img{
+            width: 200px;
+            
+        
+        }
+        .download-left div{
+            margin-top: -20px;
+        }
+        #playstore{
+            display: none;
+        }
+      
+    }
+
+
+
+
+@media screen and (max-width:479px){
+    .box img{
+        width: 100%;
+    }
+    .footer-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-child div i{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+
+
+}
